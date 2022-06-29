@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinner Wheel Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+    <main class="main-prt-wrap">
+        <div class="head-main-prt">
+            <h1 class="ttl-head-main"><i class="fa-brands fa-empire"></i> Spinner Game</h1>
+            <p class="descr-head-main">Hey Player <i class="fa-solid fa-user-astronaut"></i>, Let's Play the Game!</p>
+        </div>
+
+        <div class="body-main-prt">
+            <fieldset>
+                <legend><i class="fa-solid fa-user-astronaut"></i> Player</legend>
+                <input type="text" name="playerNamer" id="playerNamer" placeholder="gamer_001">
+            </fieldset>
+            <button class="play-btn" id="playBtn">
+                <img src="./asset/gamepad.png" alt="GamePad" style="margin-right: 8px"> Play
+            </button>
+        </div>
+    </main>
+
+    <section id="wonPopUpWindow" class="won-pop-up-window-wrapper">
+        <div class="head-won-popwindw">
+            <button id="closeWonPop" class="close-won-pop"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="body-won-popwindow">
+            <div id="winnerWrapperComp" class="winner-com-res">
+            </div>
+            <p id="winnerMsgPrt" class="winner-msg">Congrat! You Won Amazing Prise..</p>
+        </div>
+    </section>
+
+    <section id="spnWheelPopUpWindow" class="pop-up-window-wrapper">
+        <section class="header-popup-wndw">
+            <div class="user-dtl">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <span id="playerName" class="player-name"></span>
+            </div>
+            <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+        </section>
+
+        <section class="wrapper-spiner-body">
+            <div id="spinnerWheelWrapper" class="spin-wheel-wrapper">
+                <!-- dynamically add the offer in spinner wheel using js -->
+            </div>
+
+            <span class="pointer-spn" id="pointerSpn"><i class="fa-solid fa-reply-all"></i></span>
+
+            <button class="spin-btn" id="spnBtnStart"><i class="fa-brands fa-empire"></i>  Start Spin</button>
+        </section>
+    </section>
+
+    
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+</body>
+</html>
