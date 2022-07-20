@@ -85,13 +85,13 @@ selSpnStartBtn.addEventListener("click", ()=>{
 
     let creAngleArr = [90, 135, 180, 225, 270, 315, 360, 405, 450, 495, 540, 585];
 
-    let rightAngleIndex = Math.floor((Math.random() * 14)); // here 14 means it's a length of creAngleArr
+    let rightAngleIndex = Math.floor((Math.random() * (parseInt(creAngleArr.length)))); // here (parseInt(creAngleArr.length)) for safty i used parseInt although there is no chance in string but though.
 
     // we can change the duration of spinning time.
     // from this following array
     let transitionArr = [1, 2, 3, 5, 4];
 
-    let takeDiffSecond = Math.floor((Math.random() * 6)); // here 6 means it's a length of transitionArr
+    let takeDiffSecond = Math.floor((Math.random() * (parseInt(transitionArr.length)))); // here (parseInt(transitionArr.length)) for safty i used parseInt
 
     let finalSecond;
 
