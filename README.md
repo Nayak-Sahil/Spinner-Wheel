@@ -1,4 +1,4 @@
-# Spinner-Wheel
+# 🎡 Spinner-Wheel
 Spinner Wheel Web-Application Using Vanilla JS (Where it will show the Offer Reward.
 
 ### Finding the rewarded Offer:
